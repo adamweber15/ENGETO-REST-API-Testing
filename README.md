@@ -1,46 +1,35 @@
-# REST API Testing – ENGETO Final Project 2
 
-This repository contains my second final project for the **ENGETO Testing Academy**, focused on testing a REST API for student data management.
+# ENGETO – Projekt 2: Testování REST API
 
-## Project Overview
+## Cíl projektu
+Ověření funkčnosti REST API pro správu studentů, správnosti HTTP stavových kódů a konzistence dat mezi API a databází.
 
-The goal of this project was to verify the functionality, reliability, and database consistency of a REST API using both positive and negative test scenarios.
+## Použité nástroje
+- Postman
+- DBeaver
+- Swagger UI
+- SQL
+- GitHub
 
-**API endpoint:** `https://test-app.engeto.cz/students`
+## Rozsah testování
+- POST – 8 scénářů
+- GET – 7 scénářů
+- PUT – 11 scénářů
+- DELETE – 5 scénářů
 
-## Tools Used
+## Výsledky testování
 
-- **Postman** – Sending HTTP requests and validating API responses
-- **DBeaver** – Executing SQL queries and verifying database records
-- **GitHub** – Project documentation and submission
+| Ukazatel | Počet |
+|---|---:|
+| Testovací scénáře | 31 |
+| PASS | 14 |
+| FAIL | 16 |
+| K posouzení | 1 |
+| Evidované defekty | 10 |
 
-## Testing Scope
+Dokumentace obsahuje testovací scénáře, konkrétní API požadavky, SQL dotazy, očekávané a skutečné výsledky testování a reprodukovatelné bug reporty.
 
-The testing covered all four CRUD operations:
+Projekt byl přepracován na základě zpětné vazby hodnotitele.
 
-- **GET** – Retrieving student records
-- **POST** – Creating new students
-- **PUT** – Updating existing student records
-- **DELETE** – Deleting student records
-
-Additional testing included HTTP status codes, input validation, authentication, error handling, and consistency between API responses and database records.
-
-## Test Documentation
-
-The final PDF report contains:
-
-- 22 documented test scenarios
-- Test execution results (PASS/FAIL)
-- SQL queries for database verification
-- 7 documented bug reports
-- Final testing summary and conclusions
-
-## Project Deliverable
-
-The complete testing documentation is available in the PDF file included in this repository.
-
-## Author
-
-**Ing. Adam Weber**
-
-ENGETO Testing Academy | Final Project 2
+## Autor
+Ing. Adam Weber
