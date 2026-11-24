@@ -32,4 +32,4 @@ Dokumentace obsahuje testovací scénáře, konkrétní API požadavky, SQL dota
 Projekt byl přepracován na základě zpětné vazby hodnotitele.
 
 ## Autor
-Ing. Adam Weber
+Adam Weber
