@@ -1,5 +1,11 @@
 # REST API Testing – ENGETO
 
+**Language:** [Čeština](#CZ) | [English](#EN)
+
+---
+
+# CZ
+
 ## O projektu
 
 Závěrečný projekt vzdělávací akademie ENGETO zaměřený na funkční testování REST API pro správu studentů, validaci HTTP odpovědí a ověřování integrity dat v databázi PostgreSQL.
@@ -75,8 +81,95 @@ Testování bylo provedeno s databázovým přístupem pouze pro čtení. Přihl
 
 ## Autor
 
-**Adam Weber**
+**Ing. Adam Weber**
 
 ENGETO – Závěrečný projekt č. 2
 
 Listopad 2026
+
+---
+
+# EN
+
+## Project Overview
+
+Final project completed as part of the ENGETO educational academy, focused on functional testing of a REST API for student management, HTTP response validation, and data integrity verification in a PostgreSQL database.
+
+## Project Objectives
+
+- Functional testing of GET, POST, PUT, and DELETE methods.
+- Verification of positive, negative, and boundary test scenarios.
+- Validation of HTTP status codes and JSON responses.
+- Verification of authentication and Bearer token handling.
+- Data consistency verification using SQL queries.
+- Identification, reproduction, and documentation of software defects.
+
+## Technologies and Tools
+
+| Tool / Technology | Purpose |
+|---|---|
+| Postman | Manual REST API testing |
+| Swagger / OpenAPI | API documentation and specification |
+| PostgreSQL | Database environment |
+| DBeaver | Database validation |
+| SQL | Data integrity and consistency verification |
+| JSON | Request and response structure |
+| GitHub | Project documentation and version control |
+
+## Test Results
+
+| HTTP Method | Test Scenarios |
+|---|---:|
+| POST | 8 |
+| GET | 7 |
+| PUT | 11 |
+| DELETE | 5 |
+| **Total** | **31** |
+
+| Test Result | Count |
+|---|---:|
+| PASS | 14 |
+| FAIL | 16 |
+| Requires clarification | 1 |
+| **Total** | **31** |
+
+**Total identified defects: 10**
+
+## Key Findings
+
+- Incorrect storage of ZIP codes in the database.
+- Unintended changes to field values during partial student updates.
+- Insufficient validation of duplicate email addresses.
+- Incorrect HTTP status codes.
+- Inconsistencies between validation responses and API documentation.
+- Successful deletion responses without actual removal of student records from the database.
+- Insufficient handling of numeric boundary values.
+
+## Project Documentation
+
+The complete project documentation is available as a PDF file in this repository and includes:
+
+- Project requirements and testing methodology.
+- Test scenarios.
+- Detailed test execution.
+- HTTP requests and JSON responses.
+- SQL queries and database validation results.
+- Detailed bug reports, including reproduction steps, test data, and comparisons of expected and actual results.
+- Final test evaluation.
+
+The PDF documentation is written in Czech.
+
+## Test Environment
+
+- REST API: https://test-app.engeto.cz/students
+- API documentation: https://test-app.engeto.cz/docs
+
+Testing was conducted using read-only database access. Login credentials and valid authentication tokens are not included in the public documentation.
+
+## Author
+
+**Ing. Adam Weber**
+
+ENGETO – Final Project No. 2
+
+November 2026
